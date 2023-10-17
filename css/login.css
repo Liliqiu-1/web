@@ -1,0 +1,121 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#wrapper{
+	width: 1250px;
+	height: 700px;
+	background-image: url(../img/bg01.PNG);
+	background-size: 1250px 700px;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+}
+/* 返回首页 */
+#title{
+	width: 1250px;
+	height: 40px;
+	font-size: 24px;
+	line-height: 40px;
+	background-color: #A83E11;
+	position: fixed;
+}
+#title p{
+	margin-left: 25px;
+}
+
+#title a{
+	text-decoration: none;
+	color: white;
+}
+#title a:hover{
+	color: black;
+}
+
+#maincontent{
+	height: 700px;
+	width: 1250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.login{
+	height: 270px;
+	width: 280px;
+	background-color: white;
+}
+
+.p1{
+	font-size: 28px;
+	margin-top:10px;
+	width: 450px;
+}
+/* 用户名 */
+.user_name{
+	width: 280px;
+	height: 70px;
+	margin-top: 20px;
+}
+.user_name input{
+	width: 240px;
+	height: 30px;
+	font-size: 14px;
+	margin:10px 0 0 20px;
+	border-radius:6px;
+}
+
+.name-label{
+	width: 240px;
+	height: 20px;
+	margin:6px 0 0 20px ;
+	color: red;
+	font-size: 12px;
+}
+
+/* 密码 */
+.user_pwd{
+	width: 280px;
+	height: 60px;
+}
+.user_pwd input{
+	width: 240px;
+	height: 30px;
+	font-size: 14px;
+	margin:0 0 0 20px;
+	border-radius:6px;
+}
+
+.pwd-lable{
+	width: 240px;
+	height: 20px;
+	margin:6px 0 0 20px ;
+	color: red;
+	font-size: 12px;
+}
+
+
+/* 按钮 */
+.btn{
+	width: 290px;
+	height: 40px;
+	margin-left: 80px;
+}
+.btn input{
+	width: 120px;
+	height: 25px;
+	color: white;
+	background-color: #A83E11;
+	border-radius:6px;
+	border:0 ;
+}
+
+/* 注册 */
+.reg{
+	margin-left: 140px;
+	font-size: 14px;
+}
+.reg a{
+	text-decoration: none;
+	color: #000000;
+	margin-right: 8px;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>莲花楼</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="icon" href="img/logo.ico" type="images/x-ico" />
+	</head>
+	<script>
+	function $(id){
+		return document.getElementById(id);
+	}
+	// 定义一个数组，用来存放轮播图
+	var picarry=new Array();
+	 picarry[0]="./img/bg01.PNG";
+	 picarry[1]="./img/bg02.PNG";
+	 picarry[2]="./img/bg03.PNG";
+	 picarry[3]="./img/bg05.JPEG";
+	 
+	 // 定义定时器、数组下标为0
+	 var timer,index=0;
+	 // 当页面加载完成后执行函数
+	 window.onload=showpic;
+	 
+	 function showpic(){
+		 $("pic").src=picarry[index];
+		 if(index<picarry.length-1)
+			index++;
+		 else
+			index=0;
+		timer=setTimeout("showpic()",2000);
+	 }
+	 
+	</script>
+	<body>
+		<!-- 外层大盒子 -->
+		<div id="wrapper">
+			<header>
+				<!-- 导航栏  -->
+				<div id="nav">
+					<ul>
+						<li><a href="index.html">首&nbsp;&nbsp;页</a></li>
+						<li><a href="introduce.html">剧情介绍</a></li>
+						<li><a href="person.html">角色介绍</a></li>
+						<li><a href="login.html">欢迎留言</a></li>
+					</ul>
+				</div>
+				<!-- 海报 -->
+				<div id="banner">
+					<img src="./img/bg01.PNG" id="pic" />
+				</div>
+				<div id="box"></div>
+			</header>
+			
+			
+			<!-- 主要内容 -->
+			<div id="maincontent">
+				<!-- 内容简介 -->
+				<div class="introduce">
+					<h1>莲花楼</h1>
+					<p class="p1">2023年郭虎、任海涛执导的电视剧</p>
+					<img src="./img/person_bg.PNG"/>
+					<p class="p2">《莲花楼》是由郭虎、任海涛执导，成毅、曾舜晞、肖顺尧 、陈都灵、王鹤润、陈意涵、吴施乐、
+					刘梦芮、徐百慧领衔主演的古装武侠悬疑剧。该剧于2023年7月23日在爱奇艺独播 ，并于8月6日在央视八套播出。</p>
+					<p class="p2">该剧改编自藤萍的小说《吉祥纹莲花楼》，讲述了闻名武林的四顾门门主李相夷在一次大战后身受重伤，
+					从此退隐江湖成为淡泊名利的郎中李莲花，在遇到新交方多病与旧敌笛飞声后重新卷入江湖的故事 。</p>
+				</div>
+				<!-- 影视片段 -->
+				<div class="video">
+					<h1>影视片段节选</h1>
+					<p class="p1">自年幼握剑之时我便知道，自己会是那剑道魁首，江湖中的天下第一。</p>
+					<video controls="controls" autoplay="autoplay" muted="" >
+						<source src="./video/movie2.MP4"  type="video/mp4">
+						 您的浏览器不支持 video 标签。
+					</video>
+				</div>
+				<!-- 人物剧照 -->
+				<div class="images">
+					<h1>莲花楼剧照</h1>
+					<p class="p1">主要角色一览</p>
+					<div class="image">
+						<img src="./img/person_img01.PNG" />
+						<p><b>李莲花</b>&nbsp;成毅&nbsp;饰演</p>
+						<div class="liaojie"><a href="#">了解更多</a></div>
+					</div>
+					<div class="image">
+						<img src="./img/person_img02.PNG" />
+						<p><b>方多病</b>&nbsp; 曾舜晞&nbsp;饰演</p>
+						<div class="liaojie"><a href="#">了解更多</a></div>
+					</div>
+					<div class="image">
+						<img src="./img/person_img03.PNG" />
+						<p><b>笛飞声</b>&nbsp; 肖顺尧&nbsp;饰演</p>
+						<div class="liaojie"><a href="#">了解更多</a></div>
+					</div>
+					<div class="image">
+						<img src="./img/person_img04.JPG" />
+						<p><b>角丽谯</b>&nbsp; 王鹤润&nbsp;饰演</p>
+						<div class="liaojie"><a href="#">了解更多</a></div>
+					</div>
+					<div class="image">
+						<img src="./img/person_img05.JPG" />
+						<p><b>乔婉娩</b>&nbsp;陈都灵&nbsp;饰演</p>
+						<div class="liaojie"><a href="#">了解更多</a></div>
+					</div>
+				</div>
+			</div>
+			<div id="footer">
+				<p>版权所有：莲花楼</p>
+			</div>
+		</div>
+	</body>
+</html>
